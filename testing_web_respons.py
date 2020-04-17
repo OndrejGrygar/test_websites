@@ -21,6 +21,7 @@ while True:
                     time.sleep(4)
                 except Exception:
                     print(value1, "wrong Url is provided or server is down")
+                    time.sleep(4)
                     continue
 
 
