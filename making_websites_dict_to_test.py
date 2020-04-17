@@ -9,6 +9,9 @@ websites = {
         "url": "https://www.google.com/"
     },
     {
+        "url": "http://siname.cz/"
+    },
+    {
         "url": "https://www.python.org/"
     },
 ]
