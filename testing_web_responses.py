@@ -8,7 +8,7 @@ with open("websites_dict.json") as file:
     content = json.load(file)
 print(content)
 
-def response(x, y):
+def response(y):
     try:
         response = requests.get(y)
         print("Response of website", y, response.ok)
@@ -25,8 +25,8 @@ def response(x, y):
 while True:
     for key,value in content.items():
         for i in value:
-            for key1, value1 in i.items():
-                x = threading.Thread(target=response(key1,value1))
+            for value1 in i.values():
+                x = threading.Thread(target=response(value1))
                 x.start()
                 time.sleep(4)
 
